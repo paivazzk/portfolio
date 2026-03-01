@@ -1,0 +1,28 @@
+{
+  "name": "chamado",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-tailwind/react": "^2.1.10",
+    "framer-motion": "^12.31.0",
+    "lucide": "^0.563.0",
+    "lucide-react": "^0.563.0",
+    "motion": "^12.34.3",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "typed.js": "^3.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^25.3.2",
+    "@types/react": "^19.2.14",
+    "tailwindcss": "^4",
+    "typescript": "^5.9.3"
+  }
+}
