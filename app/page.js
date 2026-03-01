@@ -366,7 +366,7 @@ export default function Home() {
             Tem um projeto em mente? Vamos conversar.
           </span>
 
-          <div className="w-full bg-black flex justify-center px-6 md:px-16 py-24">
+          <div className="w-full bg-[#030303] flex justify-center px-6 md:px-16 py-24">
             <form className="w-full max-w-2xl space-y-10">
               <div>
                 <label className="block text-md tracking-[0.2em] text-neutral-500 mb-4">
