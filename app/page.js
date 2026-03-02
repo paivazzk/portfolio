@@ -41,7 +41,10 @@ export default function Home() {
   };
 
   return (
-    <div id="inicio" className="w-full min-h-screen bg-[#030303] overflow-x-hidden text-white">
+    <div
+      id="inicio"
+      className="w-full min-h-screen bg-[#030303] overflow-x-hidden text-white select-none"
+    >
       <Image
         id="bg-teia"
         src="/png-teia-aranha.png"
@@ -74,18 +77,26 @@ export default function Home() {
           </h1>
 
           <ul className="hidden md:flex text-lg tracking-wider space-x-8 font-bold">
-            <a href="#inicio"><li className="hover:scale-110 transition-transform duration-300 cursor-pointer hover:text-red-600">
-              INÍCIO
-            </li></a>
-            <a href="#projetos"><li className="hover:scale-110 transition-transform duration-300 cursor-pointer hover:text-red-600">
-              PROJETOS
-            </li></a>
-            <a href="#sobre"><li className="hover:scale-110 transition-transform duration-300 cursor-pointer hover:text-red-600">
-              SOBRE
-            </li></a>
-            <a href="#contato"><li className="hover:scale-110 transition-transform duration-300 cursor-pointer hover:text-red-600">
-              CONTATO
-            </li></a>
+            <a href="#inicio">
+              <li className="hover:scale-110 transition-transform duration-300 cursor-pointer hover:text-red-600">
+                INÍCIO
+              </li>
+            </a>
+            <a href="#projetos">
+              <li className="hover:scale-110 transition-transform duration-300 cursor-pointer hover:text-red-600">
+                PROJETOS
+              </li>
+            </a>
+            <a href="#sobre">
+              <li className="hover:scale-110 transition-transform duration-300 cursor-pointer hover:text-red-600">
+                SOBRE
+              </li>
+            </a>
+            <a href="#contato">
+              <li className="hover:scale-110 transition-transform duration-300 cursor-pointer hover:text-red-600">
+                CONTATO
+              </li>
+            </a>
           </ul>
         </div>
       </div>
@@ -105,7 +116,7 @@ export default function Home() {
             ]}
             typeSpeed={40}
             backSpeed={20}
-            className="mt-20 md:mt-80 text-[2rem] sm:text-[2.5rem] md:text-[4rem] font-bold text-white z-50"
+            className="mt-20 md:mt-80 text-[2rem] sm:text-[2.5rem] md:text-[4rem] font-bold text-white z-1"
             showCursor={true}
             contentType="html"
           />
@@ -116,34 +127,41 @@ export default function Home() {
           </p>
 
           <ul className="mt-10 flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
-             <a href="#projetos"><button className="relative w-full sm:w-[190px] h-14 bg-white text-black font-bold cursor-pointer transition-transform duration-300 hover:scale-105 hover:bg-red-600">
-              <img
-                src="/btnImage-black.png"
-                alt="Ícone"
-                className="opacity-70 w-full h-full object-cover"
-              />
+            <a href="#projetos">
+              <button className="relative w-full sm:w-[190px] h-14 bg-white text-black font-bold cursor-pointer transition-transform duration-300 hover:scale-105 hover:bg-red-600  hover:shadow-2xl hover:shadow-red-600/50">
+                <img
+                  src="/btnImage-black.png"
+                  alt="Ícone"
+                  className="opacity-70 w-full h-full object-cover"
+                />
 
-             <span className="absolute inset-0 flex items-center justify-center text-[#000000] font-bold tracking-wider text-[1.3rem]">
-                VER PROJETOS
-              </span>
-            </button></a>
+                <span className="absolute inset-0 flex items-center justify-center text-[#000000] font-bold tracking-wider text-[1.3rem] hover:text-white">
+                  VER PROJETOS
+                </span>
+              </button>
+            </a>
 
-            <a href="#contato"><button className="relative w-full sm:w-[190px] h-14 border border-neutral-600 text-white font-bold cursor-pointer transition-transform duration-300 hover:scale-105 hover:bg-red-600">
-              <img
-                src="/btnImage-white.png"
-                alt="Ícone"
-                className="opacity-70 w-full h-full object-cover"
-              />
+            <a href="#contato">
+              <button className="relative w-full sm:w-[190px] h-14 border border-neutral-600 text-white font-bold cursor-pointer transition-transform duration-300 hover:scale-105 hover:bg-red-600  hover:shadow-2xl hover:shadow-red-600/50">
+                <img
+                  src="/btnImage-white.png"
+                  alt="Ícone"
+                  className="opacity-70 w-full h-full object-cover"
+                />
 
-              <span className="absolute inset-0 flex items-center justify-center text-[#e6e6e6] font-bold tracking-wider text-[1.3rem]">
-                CONTATO
-              </span>
-            </button></a>
+                <span className="absolute inset-0 flex items-center justify-center text-[#e6e6e6] font-bold tracking-wider text-[1.3rem]">
+                  CONTATO
+                </span>
+              </button>
+            </a>
           </ul>
         </motion.div>
       </div>
 
-      <div id="projetos" className="w-full select-none bg-[#030303] pt-32 pb-10 flex flex-col items-baseline px-6 md:px-16">
+      <div
+        id="projetos"
+        className="w-full select-none bg-[#030303] pt-32 pb-10 flex flex-col items-baseline px-6 md:px-16"
+      >
         <div className="flex items-center gap-4 px-6 md:px-16 mt-20">
           <div className="w-16 h-[1px] bg-white/20" />
           <span className="text-[0.9rem] tracking-[0.3em] uppercase text-white/30 font-sans font-medium">
@@ -232,7 +250,10 @@ export default function Home() {
         </div>
       </main>
 
-      <div id="sobre" className="select-none relative w-full bg-[#030303] pt-12 pb-10 flex flex-col items-center justify-center overflow-hidden">
+      <div
+        id="sobre"
+        className="select-none relative w-full bg-[#030303] pt-12 pb-10 flex flex-col items-center justify-center overflow-hidden"
+      >
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -243,7 +264,7 @@ export default function Home() {
           <img
             src="/logo-spider-about.png"
             alt="Teia"
-            className="absolute w-140 h-140 opacity-10 pointer-events-none select-none z-0 "
+            className="absolute w-120 h-120 opacity-10 pointer-events-none select-none z-0 "
           />
 
           {/* Conteúdo */}
@@ -255,7 +276,7 @@ export default function Home() {
               </span>
             </div>
 
-            <span className="text-[3rem] md:text-[4rem] ml-0 md:ml-26 mt-5 tracking-[0.1rem] text-white font-medium">
+            <span className="text-[3rem] md:text-[4rem] ml-2 md:ml-26 mt-5 tracking-[0.1rem] text-white font-medium">
               Sobre Mim
             </span>
 
@@ -263,10 +284,11 @@ export default function Home() {
               {/* Lado esquerdo */}
               <div className="w-full lg:w-[700px] min-h-[500px] pt-12 pb-10 flex flex-col items-baseline justify-center">
                 <span className="font-sans text-left text-xl font-light tracking-wide text-[#999999]">
-                  Sou um desenvolvedor full stack apaixonado por criar
-                  experiências digitais que misturam performance técnica com
-                  design impecável. Com anos de experiência em projetos
-                  desafiadores.
+                  Sou desenvolvedor web em início de carreira, focado em
+                  construir aplicações funcionais, organizadas e com boa
+                  experiência para o usuário. Estou em constante aprendizado,
+                  desenvolvendo projetos práticos para aprimorar minhas
+                  habilidades e evoluir profissionalmente na área de tecnologia.
                 </span>
 
                 <span className="mt-5 font-sans text-left text-md font-light tracking-wide text-[#6e6e6e]">
@@ -343,7 +365,10 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <div id="contato" className="w-full select-none bg-[#030303] pt-10 pb-10 flex flex-col items-baseline justify-baseline">
+      <div
+        id="contato"
+        className="w-full select-none bg-[#030303] pt-10 pb-10 flex flex-col items-baseline justify-baseline"
+      >
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -401,13 +426,13 @@ export default function Home() {
                 ></textarea>
               </div>
 
-              <button className="relative w-full sm:w-[300px] h-16 text-2xl bg-white overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 hover:bg-red-600">
+              <button className="relative w-full sm:w-[300px] h-16 text-2xl bg-white overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 hover:bg-red-600 hover:shadow-2xl hover:shadow-red-600/50">
                 <img
                   src="/btnImage-black.png"
                   alt="Ícone"
                   className="opacity-70 w-full h-full object-cover"
                 />
-                <span className="flex absolute inset-0 flex items-center justify-center text-[#000000] font-bold tracking-wider text-[1.3rem]">
+                <span className="flex absolute inset-0 items-center justify-center text-[#000000] font-bold tracking-wider text-[1.3rem]">
                   <Send className="mr-3" />
                   ENVIAR MENSAGEM
                 </span>

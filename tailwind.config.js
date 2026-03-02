@@ -14,7 +14,14 @@ export default {
           0 0 40px #ff0000
         `,
       },
+      float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
     },
+    animation: {
+        float: 'float 3s ease-in-out infinite',
+      },
   },
   plugins: [
     function ({ matchUtilities, theme }) {
