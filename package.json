@@ -8,7 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "@material-tailwind/react": "^2.1.10",
     "@react-email/components": "^1.0.8",
     "@react-email/render": "^2.0.4",

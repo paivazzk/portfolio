@@ -392,12 +392,36 @@ export default function Home() {
           </span>
 
           <div className="w-full bg-[#030303] flex justify-center px-6 md:px-16 py-24">
-            <form className="w-full max-w-2xl space-y-10">
+            <form
+              className="w-full max-w-2xl space-y-10"
+              onSubmit={async (e) => {
+                e.preventDefault();
+
+                const formData = new FormData(e.target);
+
+                const data = {
+                  name: formData.get("name"),
+                  email: formData.get("email"),
+                  message: formData.get("message"),
+                };
+
+                await fetch("/api/send", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(data),
+                });
+
+                alert("Mensagem enviada!");
+              }}
+            >
               <div>
                 <label className="block text-md tracking-[0.2em] text-neutral-500 mb-4">
                   NOME
                 </label>
                 <input
+                  name="name"
                   type="text"
                   placeholder="Seu nome"
                   className="w-full bg-transparent border-b border-neutral-800 text-white text-md pb-3 placeholder-neutral-700 focus:outline-none focus:border-red-600 transition-colors duration-300 placeholder:tracking-wide font-sans text-white/80"
@@ -409,6 +433,7 @@ export default function Home() {
                   EMAIL
                 </label>
                 <input
+                  name="email"
                   type="email"
                   placeholder="seu@email.com"
                   className="w-full bg-transparent border-b border-neutral-800 text-white text-md pb-3 placeholder-neutral-700 focus:outline-none focus:border-red-600 transition-colors duration-300 placeholder:tracking-wide font-sans text-white/80"
@@ -420,6 +445,7 @@ export default function Home() {
                   MENSAGEM
                 </label>
                 <textarea
+                  name="message"
                   rows="4"
                   placeholder="Descreva seu projeto..."
                   className="w-full max-w-[650px] bg-transparent border-b border-neutral-800 text-white text-md pb-3 placeholder-neutral-700 focus:outline-none focus:border-red-600 transition-colors duration-300 resize-none placeholder:tracking-wide font-sans text-white/80"
