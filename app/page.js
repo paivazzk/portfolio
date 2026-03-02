@@ -487,7 +487,7 @@ export default function Home() {
 
             <div className="flex gap-8 text-neutral-500 tracking-widest text-xs">
               <a
-                href="https://github.com/paivazzk"
+               target="_blank" rel="noopener noreferrer" href="https://github.com/paivazzk"
                 className="hover:text-red-600 transition-colors duration-300 hover:underline underline-offset-4"
               >
                 GITHUB
