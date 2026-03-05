@@ -60,7 +60,7 @@ export default function Home() {
         width={550}
         height={650}
         priority
-        className="svg opacity-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 pointer-events-none pulse-animation"
+        className="opacity-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 pointer-events-none pulse-animation"
       />
 
       <div
@@ -239,7 +239,7 @@ export default function Home() {
                   <ProjectCard
                     title="Soluções Matemáticas"
                     description="Site de soluções matemáticas desenvolvido com foco em clareza, organização e usabilidade."
-                    image="/Project-Soluc.png"
+                    image="/Project-Solucoes.png"
                     tags={["React", "Tailwind CSS", "JavaScript"]}
                   />
                 </div>
