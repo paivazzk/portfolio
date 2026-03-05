@@ -481,7 +481,7 @@ export default function Home() {
             </div>
 
             <div className="text-neutral-600 text-center">
-              © 2026 — Todos os direitos reservados
+              © 2026
             </div>
 
             <div className="flex gap-8 text-neutral-500 tracking-widest text-xs">
