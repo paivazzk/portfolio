@@ -101,3 +101,8 @@ body {
     0 0 40px rgba(255, 0, 0, 0.4);
   animation: flicker 1s infinite;
 }
+.svg{
+  stroke: none;
+  stroke-width: 0;
+
+}

@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import { motion } from "motion/react";
 import TypingEffect from "./components/TypingEffect ";
@@ -56,12 +55,12 @@ export default function Home() {
 
       <Image
         id="bg-logo"
-        src="/bg-spider-header.png"
+        src="/first-header-img.jpg"
         alt="Logo"
         width={550}
         height={650}
         priority
-        className="opacity-15 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none pulse-animation"
+        className="svg opacity-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 pointer-events-none pulse-animation"
       />
 
       <div
@@ -195,7 +194,7 @@ export default function Home() {
                     title="Portfólio Cliente"
                     description="Portfólio desenvolvido com foco em design moderno, performance e experiência do usuário."
                     image="/Project-Wall.png"
-                    tags={["React", "Next.js", "Tailwind CSS", "JavaScript"]}
+                    tags={["React", "Tailwind CSS", "JavaScript"]}
                   />
                 </div>
               </motion.div>
@@ -218,7 +217,7 @@ export default function Home() {
                     title="Nexus Business"
                     description="Site desenvolvido para uma empresa de negócios, com foco em credibilidade e apresentação estratégica dos serviços."
                     image="/Project-Nexus.png"
-                    tags={["React", "Next.js", "Tailwind CSS", "JavaScript"]}
+                    tags={["React", "Tailwind CSS", "JavaScript"]}
                   />
                 </div>
               </motion.div>
@@ -241,7 +240,7 @@ export default function Home() {
                     title="Soluções Matemáticas"
                     description="Site de soluções matemáticas desenvolvido com foco em clareza, organização e usabilidade."
                     image="/Project-Soluc.png"
-                    tags={["React", "Next.js", "Tailwind CSS", "JavaScript"]}
+                    tags={["React", "Tailwind CSS", "JavaScript"]}
                   />
                 </div>
               </motion.div>
@@ -337,7 +336,7 @@ export default function Home() {
                     <CodeXml className="w-5 h-5 text-[#6e6e6e] mb-5" />
                     <h1 className="text-[#b9b9b9] font-bold mb-1">FrontEnd</h1>
                     <h1 className="text-sm">
-                      React, Next.js, Tailwind CSS, JavaScript, TypeScript
+                      React, Next.js, Tailwind CSS, JavaScript
                     </h1>
                   </div>
 
@@ -459,7 +458,7 @@ export default function Home() {
                   className="opacity-70 w-full h-full object-cover"
                 />
                 <span className="flex absolute inset-0 items-center justify-center text-[#000000] font-bold tracking-wider text-[1.3rem]">
-                  <Send className="mr-3" />
+                  <Send className="mr-3 "/>
                   ENVIAR MENSAGEM
                 </span>
               </button>
